@@ -526,3 +526,68 @@ footer small {
     scroll-behavior: auto !important;
   }
 }
+
+
+.events-page {
+  width: min(1000px, 92%);
+  margin: 60px auto;
+}
+
+.events-page h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 12px;
+}
+
+.search-panel {
+  display: grid;
+  gap: 12px;
+  margin: 30px 0;
+  padding: 24px;
+  background: #171b2b;
+  border: 1px solid #343951;
+  border-radius: 18px;
+}
+
+.search-panel input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #454b65;
+  border-radius: 10px;
+  background: #0d1020;
+  color: white;
+  font: inherit;
+}
+
+.event-card {
+  margin: 18px 0;
+  padding: 22px;
+  background: #171b2b;
+  border: 1px solid #343951;
+  border-radius: 16px;
+  animation: appear 0.35s ease;
+}
+
+.event-card h2 {
+  margin-top: 0;
+}
+
+.event-card a {
+  color: #b8a5ff;
+}
+
+.update-info {
+  color: #aaaec0;
+  font-size: 0.9rem;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
