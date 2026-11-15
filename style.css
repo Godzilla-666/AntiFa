@@ -591,3 +591,58 @@ footer small {
     transform: translateY(0);
   }
 }
+
+
+.elections-page {
+  width: min(1000px, 92%);
+  margin: 60px auto;
+}
+
+.elections-page h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+#election-search {
+  width: 100%;
+  padding: 15px;
+  margin: 24px 0;
+  border-radius: 12px;
+  border: 1px solid #454b65;
+  background: #0d1020;
+  color: white;
+  font: inherit;
+}
+
+.election-card {
+  background: #171b2b;
+  border: 1px solid #343951;
+  border-radius: 16px;
+  padding: 22px;
+  margin: 18px 0;
+  animation: appear 0.35s ease;
+}
+
+.election-card h2 {
+  margin-top: 0;
+}
+
+.election-card a,
+.source-note a {
+  color: #b8a5ff;
+}
+
+.election-button {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 12px;
+  background: #7654d8;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.election-button:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
