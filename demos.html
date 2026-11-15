@@ -4,80 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#090b16">
-  <title>Veranstaltungen – AntiFa</title>
+  <title>AntiFa – Veranstaltungen</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <header class="navbar">
-    <a class="brand" href="index.html">ANTI<span>FA</span></a>
+  <header class="site-header">
+    <a class="logo" href="index.html">AntiFa</a>
     <nav>
       <a href="index.html">Startseite</a>
-      <a class="active" href="demos.html">Veranstaltungen</a>
+      <a href="demos.html">Veranstaltungen</a>
     </nav>
-    <a class="nav-button" href="index.html">← Zurück</a>
   </header>
 
   <main class="events-page">
-    <div class="page-intro">
-      <span class="eyebrow">DEUTSCHLANDWEITE ÜBERSICHT</span>
-      <h1>Veranstaltungen <span>entdecken.</span></h1>
-      <p>Suche öffentliche Veranstaltungshinweise und informiere dich anhand der Originalquellen.</p>
-    </div>
+    <h1>Veranstaltungen entdecken</h1>
+    <p>Durchsuche öffentliche Veranstaltungen.</p>
 
     <section class="search-panel">
-      <div class="field">
-        <label for="city">Stadt oder Region</label>
-        <input id="city" type="text" placeholder="z. B. Berlin, Hamburg, Kiel">
-      </div>
-      <div class="field">
-        <label for="date">Datum ab</label>
-        <input id="date" type="date">
-      </div>
-      <div class="field">
-        <label for="keyword">Thema oder Suchbegriff</label>
-        <input id="keyword" type="search" placeholder="Suchbegriff eingeben">
-      </div>
-      <button class="primary-button search-button" id="searchButton">
-        Suchen →
-      </button>
-      <button class="reset-button" id="resetButton">Filter zurücksetzen</button>
+      <label for="search">Stadt, Titel oder Thema</label>
+      <input
+        id="search"
+        type="search"
+        placeholder="Zum Beispiel Berlin oder Kultur"
+      >
+
+      <label for="date">Datum</label>
+      <input id="date" type="date">
     </section>
 
-    <section class="results-heading">
-      <div>
-        <span class="eyebrow">ERGEBNISSE</span>
-        <h2>Öffentliche Hinweise</h2>
-      </div>
-      <span id="resultCount" class="result-count">Wird geladen …</span>
-    </section>
+    <p class="update-info">
+      Zuletzt aktualisiert:
+      <span id="last-updated">Wird geladen …</span>
+    </p>
 
-    <div id="notice" class="notice" role="status">
-      Veranstaltungsdaten werden geladen …
-    </div>
-
-    <section id="eventList" class="event-grid" aria-live="polite"></section>
-
-    <section class="source-info">
-      <h2>Über die Daten</h2>
-      <p>
-        Die Angaben stammen aus externen öffentlichen Datenquellen.
-        Sie können unvollständig oder veraltet sein. Bitte prüfe
-        Termine und Änderungen immer beim jeweiligen Herausgeber.
-      </p>
-      <a href="https://demonstrations.org/de/data"
-         target="_blank" rel="noopener noreferrer">
-        Informationen zur offenen Datenquelle →
-      </a>
+    <section id="results" aria-live="polite">
+      Veranstaltungen werden geladen …
     </section>
   </main>
-
-  <footer>
-    <a class="brand" href="index.html">ANTI<span>FA</span></a>
-    <p>Öffentliche Informationen transparent dargestellt.</p>
-    <small>© 2026 AntiFa</small>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
