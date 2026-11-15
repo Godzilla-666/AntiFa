@@ -2,51 +2,90 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DemoFinder – Willkommen</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b16">
+  <title>AntiFa – Veranstaltungen entdecken</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <div class="logo">Demo<span>Finder</span></div>
+  <header class="navbar">
+    <a class="brand" href="index.html">ANTI<span>FA</span></a>
     <nav>
-        <a href="index.html">Startseite</a>
-        <a href="demos.html">Demos</a>
+      <a class="active" href="index.html">Startseite</a>
+      <a href="demos.html">Veranstaltungen</a>
+      <a href="#about">Über uns</a>
     </nav>
-</header>
+    <a class="nav-button" href="demos.html">Entdecken →</a>
+  </header>
 
-<section class="hero">
-    <div class="hero-content">
-        <span class="tag">ENTDECKE DEINE MÖGLICHKEITEN</span>
+  <main>
+    <section class="hero">
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          VERANSTALTUNGEN IN DEUTSCHLAND
+        </div>
 
-        <h1>Finde spannende<br>
-        <span>Demos in deiner Nähe.</span></h1>
+        <h1>Was passiert<br>in deiner <span>Umgebung?</span></h1>
 
         <p>
-            Entdecke Demos in ganz Deutschland.
-            Wähle deine Stadt und finde heraus,
-            was in deiner Umgebung stattfindet.
+          Entdecke öffentliche Veranstaltungen und
+          Demonstrationen in Deutschland. Informiere dich
+          über Termine, Themen und veröffentlichte Quellen.
         </p>
 
-        <a href="demos.html" class="main-button">
-            Demos entdecken →
-        </a>
-    </div>
-</section>
+        <div class="hero-actions">
+          <a class="primary-button" href="demos.html">
+            Veranstaltungen entdecken <span>→</span>
+          </a>
+          <a class="secondary-button" href="#about">
+            Mehr erfahren
+          </a>
+        </div>
 
-<section class="info">
-    <h2>Entdecke deine Umgebung</h2>
-    <p>
-        Mit DemoFinder findest du passende Demos
-        in deiner Stadt und Umgebung.
-    </p>
-</section>
+        <div class="hero-stats">
+          <div><strong>Deutschland</strong><small>Regionale Übersicht</small></div>
+          <div><strong>Aktuell</strong><small>Öffentliche Quellen</small></div>
+          <div><strong>Transparent</strong><small>Mit Quellenangaben</small></div>
+        </div>
+      </div>
+    </section>
 
-<footer>
-    © 2026 DemoFinder – Alle Rechte vorbehalten
-</footer>
+    <section class="features" id="about">
+      <div class="section-heading">
+        <span class="eyebrow">ANTI FA</span>
+        <h2>Informiert bleiben.</h2>
+        <p>Die wichtigsten Informationen an einem Ort.</p>
+      </div>
 
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">⌕</div>
+          <h3>Einfach suchen</h3>
+          <p>Finde öffentliche Veranstaltungshinweise nach Stadt und Datum.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">◷</div>
+          <h3>Termine entdecken</h3>
+          <p>Behalte veröffentlichte Termine und Aktualisierungen im Blick.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">↗</div>
+          <h3>Quellen prüfen</h3>
+          <p>Öffne die Originalquelle und überprüfe die Angaben selbst.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="index.html">ANTI<span>FA</span></a>
+    <p>Ein Informationsprojekt für öffentliche Veranstaltungen.</p>
+    <small>© 2026 AntiFa</small>
+  </footer>
 </body>
 </html>
+
