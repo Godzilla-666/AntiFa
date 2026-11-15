@@ -1,1 +1,25 @@
 
+{
+  "lastUpdated": "2026-11-15T06:00:00Z",
+  "events": [
+    {
+      "id": "event-001",
+      "title": "Öffentliche Kulturveranstaltung",
+      "city": "Berlin",
+      "date": "2026-12-01",
+      "category": "Kultur",
+      "description": "Eine öffentliche Veranstaltung mit kulturellem Schwerpunkt.",
+      "source": "https://www.berlin.de/"
+    },
+    {
+      "id": "event-002",
+      "title": "Öffentliches Bildungsangebot",
+      "city": "Hamburg",
+      "date": "2026-12-05",
+      "category": "Bildung",
+      "description": "Ein öffentliches Informations- und Bildungsangebot.",
+      "source": "https://www.hamburg.de/"
+    }
+  ]
+}
+
