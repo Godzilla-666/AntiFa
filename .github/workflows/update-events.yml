@@ -1,1 +1,24 @@
 
+name: Update public events
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check event data
+        run: |
+          python -m json.tool events.json > /dev/null
+          echo "Event data is valid."
+
