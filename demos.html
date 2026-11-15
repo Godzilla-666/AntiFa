@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demos finden – DemoFinder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Demo<span>Finder</span></div>
+    <nav>
+        <a href="index.html">Startseite</a>
+        <a href="demos.html">Demos</a>
+    </nav>
+</header>
+
+<main class="demo-container">
+
+    <span class="tag">DEUTSCHLANDWEIT</span>
+    <h1>Finde Demos in deiner Nähe.</h1>
+    <p>Wähle deine Stadt und entdecke Veranstaltungen in deiner Umgebung.</p>
+
+    <div class="search-box">
+
+        <label for="city">Deine Stadt</label>
+
+        <select id="city">
+            <option value="">Stadt auswählen</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Hamburg">Hamburg</option>
+            <option value="München">München</option>
+            <option value="Köln">Köln</option>
+            <option value="Frankfurt">Frankfurt</option>
+            <option value="Stuttgart">Stuttgart</option>
+            <option value="Düsseldorf">Düsseldorf</option>
+            <option value="Leipzig">Leipzig</option>
+            <option value="Dresden">Dresden</option>
+            <option value="Bremen">Bremen</option>
+            <option value="Flensburg">Flensburg</option>
+            <option value="Kiel">Kiel</option>
+            <option value="Hannover">Hannover</option>
+            <option value="Dortmund">Dortmund</option>
+            <option value="Nürnberg">Nürnberg</option>
+        </select>
+
+        <label for="radius">Umkreis</label>
+
+        <select id="radius">
+            <option value="10">10 Kilometer</option>
+            <option value="25" selected>25 Kilometer</option>
+            <option value="50">50 Kilometer</option>
+            <option value="100">100 Kilometer</option>
+        </select>
+
+        <button onclick="searchDemos()" class="main-button">
+            Demos suchen →
+        </button>
+
+    </div>
+
+    <div id="results">
+        <p>Wähle eine Stadt, um Demos zu entdecken.</p>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 DemoFinder – Alle Rechte vorbehalten
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
