@@ -2,76 +2,82 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demos finden – DemoFinder</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b16">
+  <title>Veranstaltungen – AntiFa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <div class="logo">Demo<span>Finder</span></div>
+  <header class="navbar">
+    <a class="brand" href="index.html">ANTI<span>FA</span></a>
     <nav>
-        <a href="index.html">Startseite</a>
-        <a href="demos.html">Demos</a>
+      <a href="index.html">Startseite</a>
+      <a class="active" href="demos.html">Veranstaltungen</a>
     </nav>
-</header>
+    <a class="nav-button" href="index.html">← Zurück</a>
+  </header>
 
-<main class="demo-container">
-
-    <span class="tag">DEUTSCHLANDWEIT</span>
-    <h1>Finde Demos in deiner Nähe.</h1>
-    <p>Wähle deine Stadt und entdecke Veranstaltungen in deiner Umgebung.</p>
-
-    <div class="search-box">
-
-        <label for="city">Deine Stadt</label>
-
-        <select id="city">
-            <option value="">Stadt auswählen</option>
-            <option value="Berlin">Berlin</option>
-            <option value="Hamburg">Hamburg</option>
-            <option value="München">München</option>
-            <option value="Köln">Köln</option>
-            <option value="Frankfurt">Frankfurt</option>
-            <option value="Stuttgart">Stuttgart</option>
-            <option value="Düsseldorf">Düsseldorf</option>
-            <option value="Leipzig">Leipzig</option>
-            <option value="Dresden">Dresden</option>
-            <option value="Bremen">Bremen</option>
-            <option value="Flensburg">Flensburg</option>
-            <option value="Kiel">Kiel</option>
-            <option value="Hannover">Hannover</option>
-            <option value="Dortmund">Dortmund</option>
-            <option value="Nürnberg">Nürnberg</option>
-        </select>
-
-        <label for="radius">Umkreis</label>
-
-        <select id="radius">
-            <option value="10">10 Kilometer</option>
-            <option value="25" selected>25 Kilometer</option>
-            <option value="50">50 Kilometer</option>
-            <option value="100">100 Kilometer</option>
-        </select>
-
-        <button onclick="searchDemos()" class="main-button">
-            Demos suchen →
-        </button>
-
+  <main class="events-page">
+    <div class="page-intro">
+      <span class="eyebrow">DEUTSCHLANDWEITE ÜBERSICHT</span>
+      <h1>Veranstaltungen <span>entdecken.</span></h1>
+      <p>Suche öffentliche Veranstaltungshinweise und informiere dich anhand der Originalquellen.</p>
     </div>
 
-    <div id="results">
-        <p>Wähle eine Stadt, um Demos zu entdecken.</p>
+    <section class="search-panel">
+      <div class="field">
+        <label for="city">Stadt oder Region</label>
+        <input id="city" type="text" placeholder="z. B. Berlin, Hamburg, Kiel">
+      </div>
+      <div class="field">
+        <label for="date">Datum ab</label>
+        <input id="date" type="date">
+      </div>
+      <div class="field">
+        <label for="keyword">Thema oder Suchbegriff</label>
+        <input id="keyword" type="search" placeholder="Suchbegriff eingeben">
+      </div>
+      <button class="primary-button search-button" id="searchButton">
+        Suchen →
+      </button>
+      <button class="reset-button" id="resetButton">Filter zurücksetzen</button>
+    </section>
+
+    <section class="results-heading">
+      <div>
+        <span class="eyebrow">ERGEBNISSE</span>
+        <h2>Öffentliche Hinweise</h2>
+      </div>
+      <span id="resultCount" class="result-count">Wird geladen …</span>
+    </section>
+
+    <div id="notice" class="notice" role="status">
+      Veranstaltungsdaten werden geladen …
     </div>
 
-</main>
+    <section id="eventList" class="event-grid" aria-live="polite"></section>
 
-<footer>
-    © 2026 DemoFinder – Alle Rechte vorbehalten
-</footer>
+    <section class="source-info">
+      <h2>Über die Daten</h2>
+      <p>
+        Die Angaben stammen aus externen öffentlichen Datenquellen.
+        Sie können unvollständig oder veraltet sein. Bitte prüfe
+        Termine und Änderungen immer beim jeweiligen Herausgeber.
+      </p>
+      <a href="https://demonstrations.org/de/data"
+         target="_blank" rel="noopener noreferrer">
+        Informationen zur offenen Datenquelle →
+      </a>
+    </section>
+  </main>
 
-<script src="script.js"></script>
+  <footer>
+    <a class="brand" href="index.html">ANTI<span>FA</span></a>
+    <p>Öffentliche Informationen transparent dargestellt.</p>
+    <small>© 2026 AntiFa</small>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
