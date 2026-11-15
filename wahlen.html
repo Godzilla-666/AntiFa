@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AntiFa – Anstehende Wahlen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="wahlen.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">AntiFa</a>
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="demos.html">Veranstaltungen</a>
+      <a href="wahlen.html">Wahlen</a>
+    </nav>
+  </header>
+
+  <main class="elections-page">
+    <h1>Anstehende Wahlen</h1>
+    <p>Eine neutrale Übersicht der veröffentlichten Wahltermine in Deutschland.</p>
+
+    <input
+      id="election-search"
+      type="search"
+      placeholder="Bundesland oder Wahl suchen..."
+      aria-label="Wahlen durchsuchen"
+    >
+
+    <p class="update-info">
+      Datenstand: <span id="election-updated">Wird geladen ...</span>
+    </p>
+
+    <p id="election-status" aria-live="polite">
+      Wahltermine werden geladen ...
+    </p>
+
+    <section id="election-results"></section>
+
+    <p class="source-note">
+      Quelle:
+      <a
+        href="https://www.bundeswahlleiterin.de/service/wahltermine.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Die Bundeswahlleiterin – künftige Wahltermine</a>
+    </p>
+  </main>
+</body>
+</html>
